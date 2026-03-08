@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>С 8 Марта, Мама! 💐</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Лепестки для анимации фона (создаются в CSS) -->
+    <div class="spring-background"></div>
+
+    <div class="container">
+        <!-- Главное поздравление -->
+        <h1 class="main-title">🌸 С 8 Марта, Мамочка! 🌸</h1>
+        <p class="sub-title">Этот сайт создан с любовью специально для тебя от Ани ❤️</p>
+
+        <!-- Контейнер для Гифки и сообщения -->
+        <div class="gift-section">
+            <img src="2.gif" alt="Весенняя гифка" class="spring-gif" id="mainGif">
+            <button class="surprise-btn" id="surpriseBtn">Нажми на меня!</button>
+        </div>
+
+        <!-- Блок с пожеланием (изначально скрыт) -->
+        <div class="wish-card hidden" id="wishCard">
+            <p>🌷🌷🌷</p>
+            <p>Мамуля, желаю тебе бесконечной весны в душе,</p>
+            <p>солнечного настроения и море цветов!</p>
+            <p>Ты самая лучшая на свете!</p>
+            <p>🌷🌷🌷</p>
+        </div>
+
+        <!-- Интерактивная игра: Собери букет для мамы -->
+        <div class="game-section">
+            <h2>🎮 Собери букет для мамы 🎮</h2>
+            <p>Кликай на цветочки, чтобы собрать их в букет:</p>
+
+            <div class="flower-game-container" id="gameContainer">
+                <!-- Цветы будут созданы здесь с помощью JS -->
+            </div>
+
+            <!-- Счетчик собранных цветов -->
+            <div class="score-container">
+                <span>Собрано цветов: </span><span id="score">0</span> / 9
+                <button class="reset-game" id="resetGame">🔄 Начать заново</button>
+            </div>
+
+            <!-- Сообщение о победе -->
+            <div class="congrats-message hidden" id="winMessage">
+                🎉🎉🎉 Ура! Букет готов! С праздником! 🎉🎉🎉
+            </div>
+        </div>
+
+        <footer>
+            Сделано с душой. Твоя Аня 💖
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
